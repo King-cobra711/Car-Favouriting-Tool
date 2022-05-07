@@ -3,6 +3,11 @@
 ## **LocalHost**
 
 run:
+`cd User/Desktop`
+
+`mkdir carFavTool`
+
+`cd carFavTool`
 
 `git pull https://github.com/King-cobra711/Car-Favouriting-Tool.git`
 
