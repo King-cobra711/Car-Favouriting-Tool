@@ -10,6 +10,8 @@ run:
 
 `cd carFavTool`
 
+`git init`
+
 `git pull https://github.com/King-cobra711/Car-Favouriting-Tool.git`
 
 `npm i`
