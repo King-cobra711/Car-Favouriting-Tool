@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+
+// CSS
+import "./App.css";
+
+// Components
+import MakeAndModel from "./components/makeAndModel";
+import Favourites from "./components/favourites";
 
 function App() {
+  // state
+  const [favourites, setFavourites] = useState([]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <div className="row m-3">
+          <h1>Car Favouriting Tool</h1>
+        </div>
+        <div className="row m-1">
+          <div className="col-lg-6 p-2">
+            <h3 className="mb-3">Search Cars</h3>
+            <MakeAndModel
+              favourites={favourites}
+              setFavourites={setFavourites}
+            />
+          </div>
+          <div className="col-lg-6 p-2">
+            <h3 className="mb-3">Favourite Cars</h3>
+            <Favourites favourites={favourites} setFavourites={setFavourites} />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
