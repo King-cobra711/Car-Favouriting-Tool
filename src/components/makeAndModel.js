@@ -1,5 +1,4 @@
 import { useState } from "react";
-// import { ListCarMake, ListCarModel } from "../functions/functions";
 import cars from "../content/cars";
 
 const MakeAndModel = ({ favourites, setFavourites }) => {
